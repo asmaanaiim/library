@@ -42,11 +42,12 @@ This project provides a REST API that serves as a backend for such systems.
     body :  {
     "email": "admin@example.com",
     "password": "123456"
-    }
-Once authenticated, use the received token as the value for the `Authorization` header in subsequent requests.
-Authorization: Bearer <Token>
+    }.
 
-4. Register patrons, add books to the inventory, and manage borrowing and returning of books as needed.
+4. Once authenticated, use the received token as the value for the `Authorization` header in subsequent requests.
+Authorization: Bearer **Token**
+
+5. Register patrons, add books to the inventory, and manage borrowing and returning of books as needed.
 
 ## Testing
 The project includes several unit and integration tests to ensure its functionality:

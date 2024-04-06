@@ -36,16 +36,16 @@ This project provides a REST API that serves as a backend for such systems.
 
 1. Once the application is running, access the provided endpoints using tools like Postman or cURL.
 2. View the [Postman collection](https://solar-equinox-10639.postman.co/workspace/My-Workspace~b48aa230-b9b6-4351-89d5-300772555557/collection/26629596-39ce9aff-0ba7-42a1-9a3a-6e71f52b63f5?action=share&creator=26629596) containing requests to test all API endpoints.
-3. Since new users cannot be added to the system directly, mock the login process by sending a POST request to the `/rest/auth/login` endpoint with the following body:
-
-url: http://localhost:8080/rest/auth/login
-methods: POST
-body :  {
+3. Since new users cannot be added to the system directly, mock the login process by sending a POST request to the `/rest/auth/login` endpoint with the following reqiest:
+    url: http://localhost:8080/rest/auth/login
+    methods: POST
+    body :  {
     "email": "admin@example.com",
     "password": "123456"
-}
+    }
 Once authenticated, use the received token as the value for the `Authorization` header in subsequent requests.
 Authorization: Bearer <Token>
+
 4. Register patrons, add books to the inventory, and manage borrowing and returning of books as needed.
 
 ## Testing
